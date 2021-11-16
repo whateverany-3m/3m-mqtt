@@ -12,4 +12,4 @@ RUN set -x ;\
   /sbin/apk add --no-cache \
     mosquitto-clients=2.0.11-r0 \
   ;\
-  echo "INFO: end RUN" ;\
+  echo "INFO: end RUN"
