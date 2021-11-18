@@ -13,4 +13,5 @@ if [ "${MQTT_DEBUG}" = "true" ] ; then
   MQTT_OPTS="${MQTT_OPTS} -d"
 fi
 
+# shellcheck disable=2086 # Intended splitting of MQTT_OPTS
 exec mosquitto_pub ${MQTT_OPTS} -L "${MQTT_URL}" -m "${MQTT_MESG}"
